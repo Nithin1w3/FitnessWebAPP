@@ -1,0 +1,132 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+.profile-form-section .card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-stats-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-avatar-card {
+  text-align: center;
+  padding: 28px 20px;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 auto 14px;
+}
+
+.profile-avatar-card h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.user-email {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.bmi-card-profile {
+  text-align: center;
+}
+
+.bmi-card-profile h4 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.bmi-big {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.bmi-details {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.bmi-details div {
+  text-align: center;
+}
+
+.bmi-details span {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.bmi-details strong {
+  font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.account-info div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.account-info span {
+  color: var(--text-muted);
+}
+
+.account-info strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+  .profile-stats-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-stats-section {
+    grid-template-columns: 1fr;
+  }
+}

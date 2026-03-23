@@ -1,0 +1,137 @@
+.calorie-summary {
+  margin-bottom: 20px;
+}
+
+.summary-goal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--text-muted);
+}
+
+.goal-track {
+  height: 8px;
+  background: var(--bg3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.goal-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.macro-summary {
+  display: flex;
+  gap: 12px;
+}
+
+.macro-chip {
+  flex: 1;
+  background: var(--bg3);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  text-align: center;
+}
+
+.macro-chip span {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.macro-chip strong {
+  font-size: 18px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+}
+
+.date-row {
+  margin-bottom: 20px;
+}
+
+.meal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meal-card {
+  padding: 16px 20px;
+}
+
+.meal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.meal-type-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.meal-stats {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.food-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.food-table th {
+  text-align: left;
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.food-table td {
+  padding: 6px 8px;
+  color: var(--text);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.food-table tr:last-child td {
+  border-bottom: none;
+}
+
+.meal-notes {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.food-header-row {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  padding: 0 2px;
+}
+
+.food-header-row span { flex: 1; }
